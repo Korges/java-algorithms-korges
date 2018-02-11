@@ -7,7 +7,7 @@ public class TinkerTailor {
     private int amountOfPlayers;
     private int syllabe;
     private int position;
-    ArrayList playersList = new ArrayList();
+    ArrayList<Integer> playersList = new ArrayList();
 
     public TinkerTailor(int amountOfPlayers, int syllabe) {
 
@@ -40,6 +40,6 @@ public class TinkerTailor {
             }
             letsPlay();
         }
-        return (int) playersList.get(0);
+        return playersList.get(0);
     }
 }
