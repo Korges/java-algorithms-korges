@@ -19,7 +19,7 @@ public class InsertionSort {
             dataToSort.set(i, currentValue);
         }
 
-        System.out.println("InsertionSort : Sorting have taken : " + (System.currentTimeMillis() - startTime)/1000F + " seconds.");
+        System.out.println("InsertionSort - Sorting have taken : " + (System.currentTimeMillis() - startTime)/1000F + " seconds.");
 
         return dataToSort;
     }
