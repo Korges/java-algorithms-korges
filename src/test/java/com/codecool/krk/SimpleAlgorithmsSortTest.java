@@ -2,6 +2,7 @@ package com.codecool.krk;
 
 import com.codecool.krk.bubble.sort.BubbleSort;
 import com.codecool.krk.insertion.sort.InsertionSort;
+import com.codecool.krk.selection.sort.SelectionSort;
 import org.junit.jupiter.api.Test;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -13,7 +14,7 @@ import java.util.Collections;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-class BubbleAndInsertionSortTest {
+class SimpleAlgorithmsSortTest {
 
     public ArrayList loadData() {
 
@@ -59,6 +60,15 @@ class BubbleAndInsertionSortTest {
         ArrayList dataToSort = loadData();
         ArrayList sortedData = InsertionSort.sort(dataToSort);
         // use Java sort method to check the correctness of implemented InsertionSort Algorithm
+        Collections.sort(dataToSort);
+        assertEquals(dataToSort, sortedData);
+    }
+
+    @Test
+    void selectionSortTest() {
+        ArrayList dataToSort = loadData();
+        ArrayList sortedData = SelectionSort.sort(dataToSort);
+        // use Java sort method to check the correctness of implemented SelectionSort Algorithm
         Collections.sort(dataToSort);
         assertEquals(dataToSort, sortedData);
     }
