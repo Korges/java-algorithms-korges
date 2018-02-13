@@ -17,7 +17,7 @@ public class BinarySearch {
             } else if (numbersList[middle] < searchedNumber) {
                 first = middle + 1;
             } else if (numbersList[middle] == searchedNumber) {
-//                System.out.println("Found at iteration number : " + iteration);
+                System.out.println("Found at iteration number : " + iteration);
                 return true;
             }
         }
